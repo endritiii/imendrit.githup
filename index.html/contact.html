@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us</title>
+</head>
+
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="desserts.html"> Dessert</a></li>
+            <li><a href="drinks.html"> Drinks</a></li>
+            <li><a href="team.html"> Team</a></li>
+            <li><a href="reservation.html"></i> Reservation</a></li>
+            <li><a href="clients.html"> Clients</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+            <li><a href="thanks.html">Thank You</a></li>
+        </ul>
+    </nav>
+
+    <section class="EB-contact">
+        <div class="EB-content">
+            <h2>Contact US</h2>
+            <p>"At 'The Classic Plate', we value the opportunity to connect with our guests. Whether you have a question, want to make a reservation, or simply wish to share your thoughts, our team is here to assist you. Reach out to us, and let's make your experience at ClassicPlate truly exceptional."</p>
+        </div>
+        <div class="EB-container">
+            <div class="EB-contactInfo">
+                <div class="EB-box">
+                    <div class="EB-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="EB-text">
+                        <h3>Address</h3>
+                        <p>4312 Camp Road,<br>New York</p>
+                    </div>
+                </div>
+                <div class="EB-box">
+                    <div class="EB-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="EB-text">
+                        <h3>Phone</h3>
+                        <p>+43 718 026</p>
+                    </div>
+                </div>
+                <div class="EB-box">
+                    <div class="EB-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="EB-text">
+                        <h3>Email</h3>
+                        <p>TheClassicPlate@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="EB-contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="EB-inputBox">
+                        <input type="text" name="fullName" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="EB-inputBox">
+                        <input type="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="message" required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="EB-inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('nav ul');
+            menu.classList.toggle('menu-active');
+        }
+    </script>
+</body>
+
+</html>

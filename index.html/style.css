@@ -1,0 +1,159 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.EB-logo a{
+    font-size: 37px;
+    color: rgb(149, 10, 12);
+    font-weight: bolder;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5 all ease;
+}
+ul{
+    margin: 0px;
+    margin-right: 100px;
+
+}
+ul li{
+    float: left;
+    padding: 0px 10px;
+    list-style: none;
+}
+ul li a:hover{
+    color: rgb(167, 22, 22);
+}
+.EB-header{
+    background-image: url(res.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+}
+.EB-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+.EB-content h1{
+    font-size: 80px;
+    
+}
+.EB-content p{
+    position: absolute;
+    text-align: center;
+    color: rgb(233, 249, 240);
+    font-style: italic;
+    top: 50%;
+    background-repeat: none;
+    font-size: 22px;
+    transition: 0.5 all ease;
+}
+button{
+    top: 100%;
+    background: none;
+    border: 1px solid;
+    color: #fff;
+    font-size: 18px;
+    padding: 6px 25px;
+    border-radius: 6px;
+    
+   
+}
+button:hover{
+    background: whitesmoke;
+    color: rgb(142, 17, 17);
+}
+.banner{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .logo a {
+        font-size: 20px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    ul li {
+        margin-right: 15px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* Responsive styles for phones and smaller screens */
+@media screen and (max-width: 767px) {
+    .logo a {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    ul {
+        flex-direction: column;  
+        align-items: flex-start; 
+    }
+
+    ul li {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+
+    .content h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+
+
+
+      
+
+
+
+
+   

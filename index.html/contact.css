@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+
+}
+body{
+    background-color: #221f1f;
+}
+
+.EB-contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(.jpg);
+    background-size: cover;
+}
+.EB-contact .EB-content{
+    max-width: 800px;
+    text-align: center;
+   
+}
+.EB-contact .EB-content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    font-family: cursive
+
+}
+.EB-contact .EB-content p{
+    font-weight: 300;
+    color: #fff;
+    
+}
+.EB-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.EB-container .EB-contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.EB-container .EB-contactInfo .EB-box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.EB-container .EB-contactInfo .EB-box .EB-icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.EB-container .EB-contactInfo .EB-box .EB-text
+{
+    display: flex;
+    margin-left:20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+.EB-container .EB-contactInfo .EB-box .EB-text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.EB-contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.EB-contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.EB-contactForm .EB-inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.EB-contactForm .EB-inputBox input,
+.EB-contactForm .EB-inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.EB-contactForm .EB-inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.EB-contactForm .EB-inputBox input:focus ~span,
+.EB-contactForm .EB-inputBox input:valid~ span,
+.EB-contactForm .EB-inputBox textarea:focus ~span,
+.EB-contactForm .EB-inputBox textarea:valid ~span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.EB-contactForm .EB-inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #3c7e85;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+nav {
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+}
+
+nav li {
+    margin: 0 13px;
+}
+
+nav a {
+    text-decoration: none; 
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #970a0a;
+}
+
+@media only screen and (max-width: 480px) {
+    .contact .content h2 {
+        font-size: 20px;
+    }
+
+    .contact .content p {
+        font-size: 14px;
+    }
+
+    .container .contactInfo .box .icon {
+        min-width: 30px;
+        height: 30px;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .container .contactInfo .box .text {
+        font-size: 12px;
+    }
+
+    .contactForm h2 {
+        font-size: 18px;
+    }
+
+    .contactForm .inputBox input,
+    .contactForm .inputBox textarea {
+        font-size: 12px;
+    }
+
+    .contactForm .inputBox span {
+        font-size: 12px;
+    }
+
+    .contactForm .inputBox input[type="submit"] {
+        font-size: 14px;
+    }
+
+    nav li {
+        margin: 0 5px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .container .contactInfo .box .icon {
+        min-width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .container .contactInfo .box .text {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .contactForm {
+        width: 80%;
+    }
+
+    .contactForm h2 {
+        font-size: 22px;
+    }
+
+    .contactForm .inputBox input,
+    .contactForm .inputBox textarea {
+        font-size: 14px;
+    }
+
+    .contactForm .inputBox span {
+        font-size: 14px;
+    }
+
+    .contactForm .inputBox input[type="submit"] {
+        font-size: 16px;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
